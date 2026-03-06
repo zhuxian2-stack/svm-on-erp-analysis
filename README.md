@@ -6,7 +6,7 @@
 
 
 # 
-class: Participant
+class: Participant:
 	def__init__(self, subj_id):
 		self.cond_1_trials=None
 		self.cond_2_trials=None
@@ -17,9 +17,9 @@ class: Participant
 		self.max_accuracy_window=None
 
 
-def load_data():
-	pass
-	#x,y=read data
+	def load_data():
+		pass
+		#x,y=read data
 
 
 def equate_trials(x,y):
