@@ -1,0 +1,4 @@
+Example data for testing the code:
+
+	GitHub does not allow uploading files with size > 50 mb, I uploaded the files into box and shared the box link for downloading the data:
+	https://uofi.box.com/s/medp8w1ujbaxfrpy3t66ezl9iphoyknj
