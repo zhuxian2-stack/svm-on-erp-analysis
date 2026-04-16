@@ -1,0 +1,4 @@
+install <mne> package in venv
+-Name: mne (Version: 1.12.0)
+
+

@@ -72,4 +72,9 @@ class Participant:
 The plan is to decode the ERP data (two condition comparison) with Support Vector Machine, the outcome of the .py will be a SVM decoding accuracy graph at each time point for each participant, and a collective decoding accuracy for the population across time points. Also a .txt report of the result of the decoding.    
 
 
-### Test File
+### Testing Section
+The output of the code will be figures and a text file report of the decoding result.
+1. participant level decoding accuracy line plot
+2. Group level decoding accuracy line plot
+3. report of individual level decoding, t-test result report, and report of time window of high decoding accuracy, also the group level decoding report. 
+
