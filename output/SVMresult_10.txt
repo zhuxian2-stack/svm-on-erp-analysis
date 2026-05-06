@@ -1,0 +1,11 @@
+Report For Subject10
+========== Statistical result ==========
+The pseudo_trial_matrix for SVM is (78, 61, 241), labels for condition is (78,)
+Window 0-100 msMean_Accuracy: 0.529,t-value = 3.893,p-value = 0.000,significance: True
+Window 100-200 msMean_Accuracy: 0.556,t-value = 6.459,p-value = 0.000,significance: True
+Window 200-300 msMean_Accuracy: 0.567,t-value = 7.723,p-value = 0.000,significance: True
+Window 300-400 msMean_Accuracy: 0.678,t-value = 20.026,p-value = 0.000,significance: True
+Window 400-500 msMean_Accuracy: 0.806,t-value = 36.883,p-value = 0.000,significance: True
+Window 500-600 msMean_Accuracy: 0.813,t-value = 35.114,p-value = 0.000,significance: True
+Window 600-700 msMean_Accuracy: 0.727,t-value = 29.724,p-value = 0.000,significance: True
+Window 700-800 msMean_Accuracy: 0.641,t-value = 16.582,p-value = 0.000,significance: True

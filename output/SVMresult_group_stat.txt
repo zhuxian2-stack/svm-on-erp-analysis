@@ -1,0 +1,22 @@
+=====Group Statistics=====
+Number of Participants: {matrix[0]}
+Accuracy From Each Participant = [0.65985136 0.47434368 0.48295833 0.50055556 0.49618464]
+Window -200--100 msMean_Accuracy: 0.523,t-value = 0.659,p-value = 0.273,significance: False
+Accuracy From Each Participant = [0.65490984 0.49860566 0.51576736 0.51648148 0.49663671]
+Window -100-0 msMean_Accuracy: 0.536,t-value = 1.220,p-value = 0.145,significance: False
+Accuracy From Each Participant = [0.63548977 0.54604575 0.54603819 0.50625    0.52635893]
+Window 0-100 msMean_Accuracy: 0.552,t-value = 2.352,p-value = 0.039,significance: False
+Accuracy From Each Participant = [0.67234162 0.69915577 0.56797917 0.54583333 0.54326797]
+Window 100-200 msMean_Accuracy: 0.606,t-value = 3.182,p-value = 0.017,significance: True
+Accuracy From Each Participant = [0.65413012 0.84330882 0.65961806 0.60222222 0.55770153]
+Window 200-300 msMean_Accuracy: 0.663,t-value = 3.357,p-value = 0.014,significance: True
+Accuracy From Each Participant = [0.65269006 0.82531318 0.80876042 0.5712963  0.60838508]
+Window 300-400 msMean_Accuracy: 0.693,t-value = 3.703,p-value = 0.010,significance: True
+Accuracy From Each Participant = [0.63853558 0.77473584 0.79836806 0.54013889 0.60032952]
+Window 400-500 msMean_Accuracy: 0.670,t-value = 3.403,p-value = 0.014,significance: True
+Accuracy From Each Participant = [0.62683967 0.74499183 0.66654514 0.59606481 0.52737745]
+Window 500-600 msMean_Accuracy: 0.632,t-value = 3.655,p-value = 0.011,significance: True
+Accuracy From Each Participant = [0.65536793 0.71275327 0.61953125 0.63050926 0.49979031]
+Window 600-700 msMean_Accuracy: 0.624,t-value = 3.542,p-value = 0.012,significance: True
+Accuracy From Each Participant = [0.63900341 0.65066449 0.55347569 0.61606481 0.47711601]
+Window 700-800 msMean_Accuracy: 0.587,t-value = 2.706,p-value = 0.027,significance: False
