@@ -101,6 +101,7 @@ class Participant:
         self.mean_score = collapsed_result.mean(axis=0)
 
         self.time = self.epochs_syn.times * 1000
+        chance_level = 0.5
 
         plt.plot(
             self.time,
@@ -108,7 +109,9 @@ class Participant:
             color="green",
             label="SVM Decoding Scores",
         )
-        plt.axhline(0.5, color="grey", linestyle="--", label="random chance (.5)")
+        plt.axhline(
+            chance_level, color="grey", linestyle="--", label="random chance (.5)"
+        )
         plt.axvline(0, color="grey", linestyle="-", label="stimulus onset")
         plt.fill_between(
             self.time,
@@ -124,17 +127,17 @@ class Participant:
         plt.xlabel("Time(ms)")
         plt.ylabel("Decoding Score (Accuracy)")
 
-        plt.legend(loc="upper right")
+        plt.legend(loc="lower right")
         plt.savefig(f"./figures/{self.subject}_lineplot.png")
         plt.close()
 
-    def run_statistics(self, window_start=0, window_end=801, bin_size=100, alpha=0.05):
+    def run_statistics(self, window_start=0, window_end=800, bin_size=100, alpha=0.05):
         self.result_txt_line.append("========== Statistical result ==========")
         self.result_txt_line.append(
             f"The pseudo_trial_matrix for SVM is {self.x.shape}, labels for condition is {self.y.shape}"
         )
         data = np.vstack(self.iteration_array)
-        bins = np.arange(window_start, window_end, bin_size)
+        bins = np.arange(window_start, window_end + 1, bin_size)
 
         for i in range(len(bins) - 1):
             start, end = bins[i], bins[i + 1]
@@ -172,7 +175,7 @@ def group_stat_analysis(
 
     time_axis = matrix.shape[1]
     time_value = np.linspace(window_start, window_end + 1, time_axis)
-    # print(f"time axis = {time_axis}")
+    # cut the axis of -200 to 1000 into 241 slices
     bins = np.arange(window_start, window_end + bin_size, bin_size)
     for i in range(len(bins) - 1):
         start, end = bins[i], bins[i + 1]
@@ -199,6 +202,41 @@ def group_stat_analysis(
         fh.write("\n".join(group_result))
 
 
+def draw_lineplot_by_time_group(matrix, x_min=-200, x_max=800):
+
+    group_mean_score = matrix.mean(axis=0)
+
+    time_axis = matrix.shape[1]
+    time_value = np.linspace(x_min, x_max + 1, time_axis)
+
+    chance = 0.5
+    plt.plot(
+        time_value,
+        group_mean_score,
+        color="green",
+        label="SVM Decoding Scores",
+    )
+    plt.axhline(chance, color="grey", linestyle="--", label="random chance (.5)")
+    plt.axvline(0, color="grey", linestyle="-", label="stimulus onset")
+    plt.fill_between(
+        time_value,
+        group_mean_score,
+        0.5,
+        where=(group_mean_score > 0.5),
+        color="lightgrey",
+    )
+    plt.xlim(x_min, x_max)
+    plt.xticks(np.arange(x_min, x_max + 1, 100))
+
+    plt.title("SVM Decoding Line Plot For Group-Level")
+    plt.xlabel("Time(ms)")
+    plt.ylabel("Decoding Score (Accuracy)")
+
+    plt.legend(loc="lower right")
+    plt.savefig(f"./figures/group_level_lineplot.png")
+    plt.close()
+
+
 def main():
     participant_dir = Path("./data")
     group_list = []
@@ -210,7 +248,7 @@ def main():
         folder = Participant(subject_num, base="./data")
         folder.load_data()
         iteration_result = []
-        iteration_times = 10
+        iteration_times = 1
         for i in range(iteration_times):
             print(f"Iteration for {i+1}/{iteration_times} time")
             folder.equal_matrix_svm()
@@ -225,6 +263,7 @@ def main():
         group_list.append(folder.mean_score)
     group_matrix = np.vstack(group_list)
     group_stat_analysis(group_matrix)
+    draw_lineplot_by_time_group(group_matrix)
 
 
 if __name__ == "__main__":

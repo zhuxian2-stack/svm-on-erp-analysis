@@ -74,7 +74,7 @@ The plan is to decode the ERP data (two condition comparison) with Support Vecto
 
 ### Testing Section
 The output of the code will be figures and a text file report of the decoding result.
-1. participant level decoding accuracy line plot
-2. Group level decoding accuracy line plot
-3. report of individual level decoding, t-test result report, and report of time window of high decoding accuracy, also the group level decoding report. 
+1. participant level decoding accuracy line plot, report of individual level decoding, t-test result report
+2. Group level decoding accuracy t-test report and decoding accuracy line plot.
+
 
