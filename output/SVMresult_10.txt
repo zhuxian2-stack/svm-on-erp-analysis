@@ -1,11 +1,9 @@
-Report For Subject10
-========== Statistical result ==========
-The pseudo_trial_matrix for SVM is (78, 61, 241), labels for condition is (78,)
-Window 0-100 msMean_Accuracy: 0.543,t-value = 1.710,p-value = 0.081,significance: False
-Window 100-200 msMean_Accuracy: 0.564,t-value = 1.345,p-value = 0.125,significance: False
-Window 200-300 msMean_Accuracy: 0.568,t-value = 4.250,p-value = 0.007,significance: True
-Window 300-400 msMean_Accuracy: 0.692,t-value = 7.707,p-value = 0.001,significance: True
-Window 400-500 msMean_Accuracy: 0.797,t-value = 10.298,p-value = 0.000,significance: True
-Window 500-600 msMean_Accuracy: 0.812,t-value = 10.943,p-value = 0.000,significance: True
-Window 600-700 msMean_Accuracy: 0.691,t-value = 8.008,p-value = 0.001,significance: True
-Window 700-800 msMean_Accuracy: 0.662,t-value = 4.100,p-value = 0.007,significance: True
+=====Participant 10 Statistical Report=====
+Window 0-100 msMean_Accuracy: 0.541,t-value = 1.349,p-value = 0.124,significance: False
+Window 100-200 msMean_Accuracy: 0.566,t-value = 1.731,p-value = 0.079,significance: False
+Window 200-300 msMean_Accuracy: 0.579,t-value = 2.293,p-value = 0.042,significance: False
+Window 300-400 msMean_Accuracy: 0.679,t-value = 5.056,p-value = 0.004,significance: True
+Window 400-500 msMean_Accuracy: 0.798,t-value = 9.598,p-value = 0.000,significance: True
+Window 500-600 msMean_Accuracy: 0.781,t-value = 13.454,p-value = 0.000,significance: True
+Window 600-700 msMean_Accuracy: 0.697,t-value = 4.557,p-value = 0.005,significance: True
+Window 700-800 msMean_Accuracy: 0.629,t-value = 2.789,p-value = 0.025,significance: True
