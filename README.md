@@ -28,9 +28,9 @@ As mentioned in the motivation, the prospect for this code is to navigate a bett
 
 
 ## Testing Implementation detail
-Install the package as noted in requirement.txt.
-Directly Run the main.py (testing data is already in the data folder.)
-The outcome plots will be in figures folder and statistical analysis in output folder.
+* Install the package as noted in requirement.txt.
+* Directly Run the main.py (testing data is already in the data folder.)
+* The outcome plots will be in figures folder and statistical analysis in output folder.
 * The SVMs should originally be iterated for 1000 times, for the sake of testing, the current code is written at 10 times iteration. 
   * note: iteration time can be modified in line 234 iteration_times = 10.
 
