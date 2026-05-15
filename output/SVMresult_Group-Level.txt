@@ -1,9 +1,9 @@
 =====07 Statistical Report=====
-Window 0-100 msMean_Accuracy: 0.535,t-value = 0.971,p-value = 0.193,significance: False
-Window 100-200 msMean_Accuracy: 0.548,t-value = 1.774,p-value = 0.075,significance: False
-Window 200-300 msMean_Accuracy: 0.590,t-value = 3.555,p-value = 0.012,significance: True
-Window 300-400 msMean_Accuracy: 0.656,t-value = 3.192,p-value = 0.017,significance: True
-Window 400-500 msMean_Accuracy: 0.708,t-value = 4.163,p-value = 0.007,significance: True
-Window 500-600 msMean_Accuracy: 0.649,t-value = 3.671,p-value = 0.011,significance: True
-Window 600-700 msMean_Accuracy: 0.623,t-value = 3.044,p-value = 0.019,significance: True
-Window 700-800 msMean_Accuracy: 0.591,t-value = 2.331,p-value = 0.040,significance: False
+Window 0-100 msMean_Accuracy: 0.522,t-value = 0.628,p-value = 0.282,significance: False
+Window 100-200 msMean_Accuracy: 0.535,t-value = 1.370,p-value = 0.121,significance: False
+Window 200-300 msMean_Accuracy: 0.587,t-value = 3.322,p-value = 0.015,significance: True
+Window 300-400 msMean_Accuracy: 0.652,t-value = 3.450,p-value = 0.013,significance: True
+Window 400-500 msMean_Accuracy: 0.698,t-value = 4.065,p-value = 0.008,significance: True
+Window 500-600 msMean_Accuracy: 0.666,t-value = 3.769,p-value = 0.010,significance: True
+Window 600-700 msMean_Accuracy: 0.627,t-value = 3.737,p-value = 0.010,significance: True
+Window 700-800 msMean_Accuracy: 0.597,t-value = 3.016,p-value = 0.020,significance: True

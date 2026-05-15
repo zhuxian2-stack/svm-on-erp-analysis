@@ -30,7 +30,10 @@ def draw_lineplot_by_time(
     figure_output_path: Path | str = Path("./figures"),
     figure_output_extension: str = ".png",
 ):
-    # TODO: move this logic outside to get your proper input arrays
+    """
+    this is a general draw line plot function, will be used for participant-level
+    and group-level plotting. Will be created in ./figures folder in cd.
+    """
 
     if isinstance(x, int):  # this is for updating data structure for group-level plot
         x = np.linspace(x_min, x_max + 1, x)
@@ -83,6 +86,10 @@ def run_statistics(
     bin_size=100,
     alpha=0.05,
 ):
+    """
+    this is a general one-way t-test function, will be used for participant-level and
+    group-level test. Will be used to written the statistic report.
+    """
 
     if isinstance(time_axis, int):
         time_axis = np.linspace(window_start, window_end + 1, time_axis)
@@ -119,16 +126,20 @@ def write_participant_result(
     file_path_base=Path("./output"),
     file_path_extension: str = ".txt",
 ):
+    """
+    this function is to write the report with the outcome from previous function
+    the outcome .text will be in ./output folder
+    """
     file_name = file_path_base / f"SVMresult_{subject_id}{file_path_extension}"
     with open(file_name, "w") as fh:
         fh.write("\n".join(text_list))
 
 
 class Participant:
+    # create class Participant for individual .set data of different conditions
 
     def __init__(self, subject: str, base: str | Path) -> None:
         self.subject = subject
-        # Path way
         base = Path(base)
         self.syn_path = base / f"s{subject}" / f"syn{subject}-s253-clean.set"
         self.non_syn_path = base / f"s{subject}" / f"syn{subject}-s254-clean.set"
@@ -151,8 +162,10 @@ class Participant:
         self.non_syn_max_trials: int = self.epochs_nonsyn.get_data().shape[0]
 
     def equal_matrix_svm(self, n_trials: int = 5) -> None:
-        """this function trim the matrix to equal size,
-        by fitting # of minimal trials from the two conditions"""
+        """
+        this function trim the matrix to equal size,
+        by fitting # of minimal trials from the two conditions
+        """
 
         min_trials = min(self.syn_max_trials, self.non_syn_max_trials)
         self.trials_for_pesudo = min_trials // n_trials

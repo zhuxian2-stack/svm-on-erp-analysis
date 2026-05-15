@@ -1,9 +1,9 @@
 =====Participant 02 Statistical Report=====
-Window 0-100 msMean_Accuracy: 0.535,t-value = 1.331,p-value = 0.127,significance: False
-Window 100-200 msMean_Accuracy: 0.609,t-value = 9.110,p-value = 0.000,significance: True
-Window 200-300 msMean_Accuracy: 0.727,t-value = 13.277,p-value = 0.000,significance: True
-Window 300-400 msMean_Accuracy: 0.866,t-value = 13.878,p-value = 0.000,significance: True
-Window 400-500 msMean_Accuracy: 0.858,t-value = 17.472,p-value = 0.000,significance: True
-Window 500-600 msMean_Accuracy: 0.824,t-value = 13.401,p-value = 0.000,significance: True
-Window 600-700 msMean_Accuracy: 0.744,t-value = 9.061,p-value = 0.000,significance: True
-Window 700-800 msMean_Accuracy: 0.763,t-value = 10.109,p-value = 0.000,significance: True
+Window 0-100 msMean_Accuracy: 0.490,t-value = -1.307,p-value = 1.000,significance: False
+Window 100-200 msMean_Accuracy: 0.615,t-value = 12.444,p-value = 0.000,significance: True
+Window 200-300 msMean_Accuracy: 0.711,t-value = 21.029,p-value = 0.000,significance: True
+Window 300-400 msMean_Accuracy: 0.841,t-value = 38.702,p-value = 0.000,significance: True
+Window 400-500 msMean_Accuracy: 0.828,t-value = 44.531,p-value = 0.000,significance: True
+Window 500-600 msMean_Accuracy: 0.790,t-value = 37.179,p-value = 0.000,significance: True
+Window 600-700 msMean_Accuracy: 0.760,t-value = 37.241,p-value = 0.000,significance: True
+Window 700-800 msMean_Accuracy: 0.726,t-value = 27.580,p-value = 0.000,significance: True
