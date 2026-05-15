@@ -1,5 +1,6 @@
 install <mne> package
--Name: mne (Version: 1.12.0)
+Name: mne 
+Version: 1.12.0
 
 install <scikit-learn> package
 Name: scikit-learn
